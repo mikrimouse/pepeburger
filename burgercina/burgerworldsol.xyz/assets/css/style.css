@@ -1,0 +1,527 @@
+:root {
+  --white: #ffffff;
+  --dark-grey: #2b2b2b;
+  --black: #000000;
+  --brown: #ba5024;
+}
+
+@font-face {
+    font-family: 'VlumpBlack';
+    src: url('../font/VlumpBlack.woff2') format('woff2'),
+        url('../font/VlumpBlack.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oxygen';
+    src: url('../font/Oxygen-Light.woff2') format('woff2'),
+        url('../font/Oxygen-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oxygen';
+    src: url('../font/Oxygen-Regular.woff2') format('woff2'),
+        url('../font/Oxygen-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+* {
+  outline: none !important;
+  word-break: break-word;
+  font-family: 'VlumpBlack', sans-serif;
+}
+
+
+body {
+  background-color: #000000;
+}
+section {
+  display: none;
+}
+section  {
+  position: relative;
+  width: 100vw; /* Full width */
+  height: 100vh; /* Full viewport height */
+  overflow: hidden;
+}
+.background {
+   position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.items {
+  position: absolute;
+  display: block;
+  transform: translate(-50%, -50%);
+}
+
+.items img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Positioning the clickable areas (adjust top, left, width, height) */
+#item-rat {
+  top: 59vh;
+  left: 12vw;
+  width: 6vw;
+}
+
+#item-logo-post {
+  top: 27vh;
+  left: 14vw;
+  width: 10vw;
+}
+
+#item-lambo {
+  top: 69vh;
+  left: 21vw;
+  width: 17vw;
+}
+
+#item-lambo-2 {
+  top: 71vh;
+  left: 46vw;
+  width: 14vw;
+}
+#item-char-1 {
+  top: 44vh;
+  left: 82vw;
+  width: 6vw;
+}
+#item-char-2 {
+  top: 47vh;
+  left: 38vw;
+  width: 3.5vw;
+}
+#item-char-3 {
+  top: 59vh;
+  left: 63vw;
+  width: 3.5vw;
+}
+
+#item-char-4 {
+  top: 73vh;
+  left: 67vw;
+  width: 6.5vw;
+}
+#item-char-5 {
+  top: 53.8vh;
+  left: 50vw;
+  width: 6vw;
+}
+#item-char-6 {
+  top: 32.8vh;
+  left: 66vw;
+  width: 6vw;
+}
+#item-char-17 {
+  top: 73.8vh;
+  left: 15vw;
+  width: 8.5vw;
+}
+
+#item-char-14 {
+  top: 56vh;
+  left: 72.7vw;
+  width: 13.5vw;
+}
+/* #item-char-7 {
+  top: 73.8vh;
+  left: 15vw;
+  width: 6.5vw;
+} */
+
+#item-order {
+  top: 64.8vh;
+  left: 23vw;
+  width: 9.5vw;
+}
+#item-tacos {
+  top: 64.8vh;
+  left: 76vw;
+  width: 8.5vw;
+  z-index: 1;
+}
+
+#item-drinks {
+  top: 63.8vh;
+  left: 72vw;
+  width: 2.4vw;
+}
+
+#item-fries {
+  top: 66.8vh;
+  left: 53vw;
+  width: 5vw;
+}
+
+#item-x {
+  top: 4.8vh;
+  left: 42vw;
+}
+
+#item-telegram {
+  top: 4.8vh;
+  left: 46vw;
+}
+
+#item-dex {
+  top: 4.8vh;
+  left: 50vw;
+}
+
+#item-char-8 {
+  top: 78.8vh;
+  left: 86vw;
+  width: 17.5vw;
+}
+#item-char-9 {
+  top: 78.8vh;
+  left: 12vw;
+  width: 17.5vw;
+}
+#item-rat-3 {
+  top: 61vh;
+  left: 24vw;
+  width: 9.5vw;
+}
+#item-burger-3 {
+  top: 39vh;
+  left: 24vw;
+  width: 9.5vw;
+}
+
+#item-drinks-2 {
+  top: 81.8vh;
+  left: 80vw;
+  width: 3.5vw;
+}
+#item-char-10 {
+  top: 77.8vh;
+  left: 85vw;
+  width: 22.5vw;
+}
+#item-char-11 {
+  top: 54.8vh;
+  left: 11vw;
+  width: 14.5vw;
+}
+#item-pepe {
+  top: 26.4vh;
+  left: 53vw;
+  width: 7.5vw;
+}
+
+#item-burger-world {
+  top: 49.4vh;
+  left: 54vw;
+  width: 7.5vw;
+}
+#item-burger-world-3 {
+  top: 10.4vh;
+  left: 20vw;
+  width: 8.5vw;
+}
+
+#item-billion {
+  top: 14.4vh;
+  left: 48vw;
+  width: 18.5vw;
+}
+
+#item-solana {
+  top: 15.4vh;
+  left: 32vw;
+  width: 6.5vw;
+}
+
+
+#item-send-trash {
+  top: 63vh;
+  left: 54vw;
+  width: 14.5vw;
+}
+
+
+#item-rat-2 {
+  top: 37vh;
+  left: 45vw;
+  width: 7.5vw;
+}
+#item-burger {
+  top: 42.8vh;
+  left: 18vw;
+  width: 8.5vw;
+}
+#item-burger-2 {
+  top: 40.8vh;
+  left: 41vw;
+  width: 5vw;
+}
+#item-fries-2 {
+  top: 75.8vh;
+  left: 71vw;
+  width: 5.5vw;
+}
+
+#item-menu {
+  top: 52.8vh;
+  left: 76vw;
+  width: 34.5vw;
+}
+
+#item-char-12 {
+  top: 64vh;
+  left: 49vw;
+  width: 20.5vw;
+}
+#item-char-13 {
+  top: 61vh;
+  left: 14vw;
+  width: 20.5vw;
+}
+#item-char-15 {
+  top: 74vh;
+  left: 86vw;
+  width: 6.5vw;
+}
+#item-char-16 {
+  top: 61vh;
+  left: 58vw;
+  width: 21.5vw;
+}
+#item-char-18 {
+  top: 15vh;
+  left: 72vw;
+  width: 21.5vw;
+}
+#item-food-1 {
+  top: 42vh;
+  left: 40vw;
+  width: 11.5vw;
+}
+#item-fries-3 {
+  top: 92.8vh;
+  left: 46vw;
+  width: 8vw;
+}
+#item-fries-4 {
+  top: 90.8vh;
+  left: 86vw;
+  width: 8vw;
+}
+#item-fries-5 {
+  top: 63.8vh;
+  left: 63vw;
+  width: 8vw;
+}
+
+#item-drinks-3 {
+  top: 84.8vh;
+  left: 53vw;
+  width: 4vw;
+}
+#item-drinks-4 {
+  top: 58.8vh;
+  left: 55vw;
+  width: 4vw;
+}
+
+#item-w-logo {
+  top: 59.8vh;
+  left: 42vw;
+  width: 6vw;
+}
+
+
+#item-burger-world-2 {
+  top: 35.8vh;
+  left: 60vw;
+  width: 8vw;
+}
+.socials {
+  background: #9c2715;
+  padding: 13px;
+  border-radius: 50%;
+  border: 3px #37332A solid;
+  height: 60px;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.socials:hover {
+  background: #fec100;
+}
+
+.socials img {
+  filter: invert(1);
+}
+
+.blob {
+	background: #ffffff;
+  border-radius: 50%;
+  margin: 10px;
+  height: 20px;
+  width: 20px;
+  box-shadow: 0 0 0 0 rgb(255 255 255);
+  transform: scale(1);
+  animation: pulse 2s infinite;
+  position: absolute;
+  z-index: 1;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+#blob-enter {
+  display: block;
+  top: 46vh;
+  left: 46.5vw;
+  width: 5.5vw;
+}
+
+#blob-drive {
+  display: block;
+  top: 36vh;
+  left: 71.5vw;
+  width: 5.5vw;
+}
+
+#blob-takeout {
+  display: block;
+  top: 45vh;
+  left: 94vw;
+  width: 8vw;
+}
+
+#blob-whats-cooking {
+  display: block;
+  top: 33vh;
+  left: 24.5vw;
+  width: 7vw;
+}
+
+#blob-look-around{
+  display: block;
+  top: 33vh;
+  left: 76.5vw;
+  width: 8vw;
+}
+.blob-ticker {
+  display: block;
+  width: 10vw;
+}
+#intro-screen .blob-ticker {
+  top: 82vh;
+  left: 74vw;
+}
+#resto-inside .blob-ticker {
+  top: 50vh;
+  left: 41vw;
+}
+#drive-thru .blob-ticker {
+  top: 44vh;
+  left: 42vw;
+}
+
+#take-out .blob-ticker {
+  top: 81vh;
+    left: 18vw;
+}
+
+#look-around .blob-ticker {
+  top: 63vh;
+  left: 92vw;
+}
+#trash-here {
+  top: 70vh;
+  left: 54vw;
+  padding: 11px 15px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  border-radius: 24px;
+  box-shadow: 0 2px 0 4px #000;
+  max-width: 592px;
+  z-index: 1;
+  font-size: 8px;
+}
+.copy-btn {
+  cursor: pointer;
+}
+
+.social-wrapper {
+  top: 26vh;
+  left: -4vw;
+  position: absolute;
+}
+
+#whats-cooking .blob-ticker {
+  top: 32vh;
+  left: 31vw;
+  position: absolute;
+}
+
+
+.btn-goback {
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  left: 10px;
+  display: none; 
+  cursor: pointer;
+}
+.btn-goback img{
+  display: block;
+  width: 10vw;
+}
+
+#particles-js {
+  position: fixed;
+  height: 100%;
+  top: 0;
+  z-index: -1;
+}
+
+@media only screen and (min-width: 1025px) {
+  #popupModal {
+      display: none;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+::-webkit-scrollbar-thumb {
+  background: #285070; 
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #FEC600; 
+}
+::-moz-selection { 
+  color: white;
+  background: #285070;
+}
+::selection {
+  color: white;
+  background: #285070;
+}

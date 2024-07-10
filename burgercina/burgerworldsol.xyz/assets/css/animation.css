@@ -1,0 +1,117 @@
+#item-rat img {
+    animation: pepeclown 5s linear infinite;
+}
+
+#item-char-2 img{
+    animation: bobo 1.5s linear infinite;
+}
+#item-char-3 img, #item-char-15 img, #item-char-17 img, #item-char-4 img, #item-char-9 img{
+    animation: bobo 1.5s linear infinite;
+}
+#item-char-14 img{
+    animation: wojakmove 2s linear infinite;
+}
+#item-lambo img, #item-fries img, .blob-ticker img, #item-burger-world-2 img, #item-fries-5 img, #item-drinks-4 img, 
+#item-drinks-2 img, #item-w-logo img,
+#item-burger-3 img, #item-rat-3 img, #item-fries-4 img, #item-fries-3 img, #item-drinks-3 img,
+#item-burger-world-3 img, #item-billion img, #item-solana img {
+    animation: magichat .5s linear infinite;
+}
+#item-lambo-2 img{
+    animation: magichat .5s linear infinite;
+}
+#item-logo-post img, #item-char-18 img {
+    animation: scaleUpDown .5s linear infinite;
+}
+#item-char-16 img{
+    animation: scaleUpDown .5s linear infinite;
+}
+#blob-enter img, 
+#blob-drive img, 
+#blob-takeout img, 
+#blob-whats-cooking img, 
+#blob-look-around img,
+#btn-goback img {
+    animation: scaleUpDown 1s ease-in-out infinite;
+}
+
+@keyframes bobo {
+    0%,to {
+        -webkit-transform: translateX(0);
+        transform: translateX(0)
+    }
+
+    10%,30%,50%,70%,90% {
+        -webkit-transform: translateX(-10px);
+        transform: translateX(-10px)
+    }
+
+    20%,40%,60%,80% {
+        -webkit-transform: translateX(10px);
+        transform: translateX(10px)
+    }
+}
+
+@keyframes scaleUpDown {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+  }
+
+ @keyframes pepeclown {
+    0%,to {
+        -webkit-transform: translateX(0) scale(.85) rotate(0) translateY(-10px);
+        transform: translateX(0) scale(.85) rotate(0) translateY(-10px)
+    }
+
+    10%,30%,50%,70%,90% {
+        -webkit-transform: translateX(-15px) scale(1) rotate(7deg) translateY(0);
+        transform: translateX(-15px) scale(1) rotate(7deg) translateY(0)
+    }
+
+    20%,40%,60%,80% {
+        -webkit-transform: translateX(10px) scale(.9) rotate(0) translateY(-10px);
+        transform: translateX(10px) scale(.9) rotate(0) translateY(-10px)
+    }
+}
+
+@keyframes magichat {
+    0%,to {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+
+    25% {
+        -webkit-transform: scale(.9,1.1);
+        transform: scale(.9,1.1)
+    }
+
+    50% {
+        -webkit-transform: scale(1.1,.9);
+        transform: scale(1.1,.9)
+    }
+
+    75% {
+        -webkit-transform: scale(.95,1.05);
+        transform: scale(.95,1.05)
+    }
+}
+@keyframes wojakmove {
+    0% {
+        -webkit-transform: translateY(0) rotate(0deg);
+        transform: translateY(0) rotate(0deg)
+    }
+
+    50% {
+        -webkit-transform: translateY(-1%) translateX(24%) rotate(1deg) scale(.97);
+        transform: translateY(-1%) translateX(24%) rotate(1deg) scale(.97)
+    }
+
+    to {
+        -webkit-transform: translateY(0) rotate(0deg);
+        transform: translateY(0) rotate(0deg)
+    }
+}
